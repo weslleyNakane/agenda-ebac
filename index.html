@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Agenda</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/icons8-contacts-96.png" alt="agenda de contatos">
+            <h1>Agenda</h1>
+        </header>
+        <form id="form">
+            <input id="campo-nome" type="text" placeholder="Nome" required>
+            <input id="campo-numero" type="number" placeholder="Numero" required>
+            <button id="btn-adicionar" type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="nome-lista">
+
+                    </th>
+                    <th class="numero-lista">
+
+                    </th>
+                    <th>
+                        <a href="#"><img class="img-container" src="./img/icons8-phone-64.png" alt="telefone"></a>
+                        <a href="#" class="btn-remover"><img class="img-container" src="./img/icons8-cancel-64.png"
+                                alt="x para cancelar"></a>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
